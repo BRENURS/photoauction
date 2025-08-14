@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Auction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 1rem;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .photo-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .photo-card img {
+            width: 100%;
+            display: block;
+        }
+        .photo-card .info {
+            padding: 1rem;
+        }
+        .photo-card h3 {
+            margin: 0 0 0.5rem;
+        }
+        .bid-btn {
+            display: inline-block;
+            background-color: #ff6600;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #222;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Photography Auction</h1>
+        <p>Bid on beautiful photographs and support our cause</p>
+    </header>
+
+    <section class="gallery">
+        <div class="photo-card">
+            <img src="https://via.placeholder.com/400x300" alt="Photo 1">
+            <div class="info">
+                <h3>Sunset Bliss</h3>
+                <p>Starting Bid: $50</p>
+                <a href="#" class="bid-btn">Place Bid</a>
+            </div>
+        </div>
+        <div class="photo-card">
+            <img src="https://via.placeholder.com/400x300" alt="Photo 2">
+            <div class="info">
+                <h3>Mountain Majesty</h3>
+                <p>Starting Bid: $70</p>
+                <a href="#" class="bid-btn">Place Bid</a>
+            </div>
+        </div>
+        <div class="photo-card">
+            <img src="https://via.placeholder.com/400x300" alt="Photo 3">
+            <div class="info">
+                <h3>Urban Nights</h3>
+                <p>Starting Bid: $60</p>
+                <a href="#" class="bid-btn">Place Bid</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Photography Auction | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
